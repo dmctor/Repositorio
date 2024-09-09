@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Intermedio</title>
+    <link href="estiloF.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Formulario Avanzado</h1>
+    <form action="respuesta.html" method="get">
+        <p>Usuario: <input type="text" name="usuario" id="vusuario" required ></p>
+        <p>Contraseña: <input type="password" name="clave" id="vclave" required></p>
+        <p>Nacimiento: <input type="date" name="nacim" id="vnacim" required></p>
+        <p>Género: Hombre <input type="radio" name="genero" id="g1" value="M" checked>
+                   Mujer  <input type="radio" name="genero" id="g2" value="F">
+        </p>
+        <p>Dirección:<textarea cols="25" rows="6" name="direc" id="vdirec" required>Escriba aquí la dirección</textarea></p>
+        <p>Pasatiempos: 
+           <input type="checkbox" name="musica" id="vmusica" value="MSC" checked>Música 
+           <input type="checkbox" name="meditar" id="vmeditar" value="MDT">Meditar 
+           <input type="checkbox" name="leer" id="vleer" value="LEE">Leer 
+        </p>
+        <p>Ciudad:
+            <select name="ciudad" id="vciudad">
+                <option value="LM">Lima</option>
+                <option value="AQ">Arequipa</option>
+                <option value="IQ">Iquitos</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p>
+    </form>
+
+</body>
+</html>
